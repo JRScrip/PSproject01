@@ -96,3 +96,11 @@ Write-Host "$($i+1).$($names[$i])"
 Write-Host "`nTotal loops: $NumNames"
 
 
+<# create a powershell program to 
+   Install available updates in windows
+   Get current user log-on to the computer
+   Delete users profile in users and also in registry
+   Get-list for [RAM Size, storage, windows version, CPU Cores,]
+   Uninstall application in Appwiz
+#>
+
