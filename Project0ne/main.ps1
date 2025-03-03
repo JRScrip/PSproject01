@@ -43,9 +43,9 @@ const Player2 = {
 }
 
 #Get-hostnames
-# $ouDN = "OU=Samsung UK,OU=Production,OU=Computers,OU=CEB - Cebu,OU=Centers,OU=AppSense,DC=teleperformanceusa,DC=com"
-$computers = Get-ADComputer -Filter * -SearchBase "OU=Kogan,OU=Production,OU=Computers,OU=CEB - Cebu,OU=Centers,OU=AppSense,DC=teleperformanceusa,DC=com" | Select-Object name
-$computers | Export-Csv -Path "C:\Users\coronel.223\Documents\kogan.csv" -NoTypeInformation
+# $ouDN = "Put the path of the OU here"
+$computers = Get-ADComputer -Filter * -SearchBase "Put the path of the OU here" | Select-Object name
+$computers | Export-Csv -Path "put the path where you want so save the file" -NoTypeInformation
 
 Get-CimInstance -ClassName Win32_ThreadTrace 
 Get-CimInstance -ClassName Win32_LogicalDisk
@@ -103,4 +103,4 @@ Write-Host "`nTotal loops: $NumNames"
    Get-list for [RAM Size, storage, windows version, CPU Cores,]
    Uninstall application in Appwiz
 #>
-
+<# create a project like Jenkins #>
